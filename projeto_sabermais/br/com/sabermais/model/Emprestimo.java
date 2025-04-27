@@ -12,7 +12,15 @@ public class Emprestimo {
     private final Boolean reserva;
     private final String devolucaoEfetiva;
 
-    public Emprestimo (
+    public Emprestimo(
+            Livro livroid;
+            Leitor leitor;
+            Unidade unidade;
+            LocalDate dataEmprestimo ;
+            LocalDate dataDevolucao;
+            int renovacoes;
+            Boolean reserva;
+            String devolucaoEfetiva;
 
     )
 }
