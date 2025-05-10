@@ -20,6 +20,38 @@ public Funcionario (
 ){
         if (nome == null || nome.isBlank())
             throw new IllegalArgumentException("Nome inválido.");
+        if (cpf <= 0)
+            throw new IllegalAccessException("CPF invalido.");
+        if (dataNascimento <= 0)
+            throw new IllegalArgumentException("Data de nascimento invalido.");
+
+        this.nome = nome;
+        this.cpf = cpf;
+        this.dataNascimento = dataNascimento;
+        this.cargo = cargo;
+        this.unidade = unidade;
 
     }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public LocalDate getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public int getCpf() {
+        return cpf;
+    }
+
+    public Cargo getCargo() {
+        return cargo;
+    }
+
+    public Unidade getUnidade() {
+        return unidade;
+    }
+}
+
 }
