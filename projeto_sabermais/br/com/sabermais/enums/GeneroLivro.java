@@ -1,6 +1,6 @@
 package br.com.sabermais.enums;
 
-public class GeneroLivro {
+public enum GeneroLivro {
     ROMANCE("Romance"),
     FANTASIA("Fantasia"),
     FICCAO_CIENTIFICA("Ficção Científica"),

@@ -1,6 +1,6 @@
 package br.com.sabermais.enums;
 
-public class Genero {
+public enum Genero {
     FEMININO("Feminino"),
     MASCULINO("Masculino"),
     OUTRO("Outro"),
